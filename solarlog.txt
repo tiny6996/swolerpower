@@ -1,0 +1,270 @@
+#This is the log file for the solar panel
+
+
+ the program was stated at:2016-02-12 19:24:43.037645
+today is: 2016-02-12
+the day the length is:14672
+the turn Length for today is:190
+current sunsise: 2016-02-12 13:04:00
+current sunset: 2016-02-12 23:30:00
+next sunrise: 2016-02-13 13:02:00
+the array has been set back to the sunrise position 
+the program will wait 48266 seconds until the next sunrise 
+today is: 2016-02-13
+the day the length is:37740
+the turn Length for today is:490
+current sunsise: 2016-02-13 13:02:00
+current sunset: 2016-02-13 23:31:00
+next sunrise: 2016-02-14 13:01:00
+the array has been set back to the sunrise position 
+the program will wait 85899 seconds until the next sunrise 
+today is: 2016-02-14
+the day the length is:37920
+the turn Length for today is:492
+current sunsise: 2016-02-14 13:01:00
+current sunset: 2016-02-14 23:33:00
+next sunrise: 2016-02-15 13:00:00
+the array has been set back to the sunrise position 
+the program will wait 85898 seconds until the next sunrise 
+today is: 2016-02-15
+the day the length is:38040
+the turn Length for today is:494
+current sunsise: 2016-02-15 13:00:00
+current sunset: 2016-02-15 23:34:00
+next sunrise: 2016-02-16 12:58:00
+the array has been set back to the sunrise position 
+the program will wait 85838 seconds until the next sunrise 
+
+ the program was stated at:2016-02-15 19:25:37.693939
+today is: 2016-02-15
+the day the length is:14857
+the turn Length for today is:192
+current sunsise: 2016-02-15 13:00:00
+current sunset: 2016-02-15 23:34:00
+next sunrise: 2016-02-16 12:58:00
+the array has been set back to the sunrise position 
+the program will wait 47623 seconds until the next sunrise 
+today is: 2016-02-16
+the day the length is:38220
+the turn Length for today is:496
+current sunsise: 2016-02-16 12:58:00
+current sunset: 2016-02-16 23:35:00
+next sunrise: 2016-02-17 12:57:00
+the array has been set back to the sunrise position 
+the program will wait 85898 seconds until the next sunrise 
+today is: 2016-02-17
+the day the length is:38340
+the turn Length for today is:497
+current sunsise: 2016-02-17 12:57:00
+current sunset: 2016-02-17 23:36:00
+next sunrise: 2016-02-18 12:55:00
+the array has been set back to the sunrise position 
+the program will wait 85838 seconds until the next sunrise 
+
+ the program was stated at:2016-02-17 18:32:00.299106
+today is: 
+ the program was stated at:2016-02-17 18:41:21.992320
+today is: Sunrise
+the day the length is:17632
+the turn Length for today is:228
+current sunsise: 2016-02-17 12:57:00
+current sunset: 2016-02-17 23:36:00
+next sunrise: 2016-02-18 12:55:00
+
+ the program was stated at:2016-02-18 22:21:24.777003
+today is: Sunrise
+the day the length is:4549
+the turn Length for today is:59
+current sunsise: 2016-02-18 12:55:00
+current sunset: 2016-02-18 23:38:00
+next sunrise: 2016-02-19 12:54:00
+the array has been set back to the sunrise position 
+the program will wait 47268 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:38700
+the turn Length for today is:502
+current sunsise: 2016-02-19 12:54:00
+current sunset: 2016-02-19 23:39:00
+next sunrise: 2016-02-20 12:52:00
+the array has been set back to the sunrise position 
+the program will wait 85838 seconds until the next sunrise 
+
+ the program was stated at:2016-02-19 19:47:02.920665
+today is: Sunrise
+the day the length is:13872
+the turn Length for today is:180
+current sunsise: 2016-02-19 12:54:00
+current sunset: 2016-02-19 23:39:00
+next sunrise: 2016-02-20 12:52:00
+the array has been set back to the sunrise position 
+the program will wait 47580 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:38376
+the turn Length for today is:498
+current sunsise: 2016-02-20 12:52:00
+current sunset: 2016-02-20 23:40:00
+next sunrise: 2016-02-21 12:51:00
+the array has been set back to the sunrise position 
+the program will wait 47460 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:38143
+the turn Length for today is:495
+current sunsise: 2016-02-21 12:51:00
+current sunset: 2016-02-21 23:41:00
+next sunrise: 2016-02-22 12:49:00
+the array has been set back to the sunrise position 
+the program will wait 47280 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:38381
+the turn Length for today is:498
+current sunsise: 2016-02-22 12:49:00
+current sunset: 2016-02-22 23:43:00
+next sunrise: 2016-02-23 12:48:00
+the array has been set back to the sunrise position 
+the program will wait 47100 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:38507
+the turn Length for today is:500
+current sunsise: 2016-02-23 12:48:00
+current sunset: 2016-02-23 23:44:00
+next sunrise: 2016-02-24 12:46:00
+the array has been set back to the sunrise position 
+the program will wait 46920 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:38660
+the turn Length for today is:502
+current sunsise: 2016-02-24 12:46:00
+current sunset: 2016-02-24 23:45:00
+next sunrise: 2016-02-25 12:45:00
+
+ the program was stated at:2016-02-24 15:18:20.114563
+today is: Sunrise
+the day the length is:30356
+the turn Length for today is:394
+current sunsise: 2016-02-24 12:46:00
+current sunset: 2016-02-24 23:45:00
+next sunrise: 2016-02-25 12:45:00
+the array has been set back to the sunrise position 
+the program will wait 46800 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:39249
+the turn Length for today is:509
+current sunsise: 2016-02-25 12:45:00
+current sunset: 2016-02-25 23:47:00
+next sunrise: 2016-02-26 12:43:00
+
+ the program was stated at:2016-03-06 21:17:51.785973
+today is: Sunrise
+the day the length is:9623
+the turn Length for today is:124
+current sunsise: 2016-03-06 12:29:00
+current sunset: 2016-03-06 23:59:00
+next sunrise: 2016-03-07 12:27:00
+
+ the program was stated at:2016-03-06 21:21:58.319125
+today is: Sunrise
+the day the length is:9377
+the turn Length for today is:121
+current sunsise: 2016-03-06 12:29:00
+current sunset: 2016-03-06 23:59:00
+next sunrise: 2016-03-07 12:27:00
+
+ the program was stated at:2016-03-28 21:57:29.695775
+today is: Sunrise
+the day the length is:8747
+the turn Length for today is:113
+current sunsise: 2016-03-28 11:51:00
+current sunset: 2016-03-29 00:24:00
+next sunrise: 2016-03-29 11:49:00
+
+ the program was stated at:2016-03-28 21:59:16.022862
+today is: Sunrise
+the day the length is:8641
+the turn Length for today is:112
+current sunsise: 2016-03-28 11:51:00
+current sunset: 2016-03-29 00:24:00
+next sunrise: 2016-03-29 11:49:00
+the array has been set back to the sunrise position 
+the program will wait 41100 seconds until the next sunrise 
+today is: Sunrise
+the day the length is:44844
+the turn Length for today is:582
+current sunsise: 2016-03-29 11:49:00
+current sunset: 2016-03-30 00:25:00
+next sunrise: 2016-03-30 11:47:00
+
+ the program was stated at:2016-02-29 21:57:15.844954
+today is: Sunrise
+the day the length is:6783
+the turn Length for today is:88
+current sunsise: 2016-02-29 12:38:00
+current sunset: 2016-02-29 23:51:00
+next sunrise: 2016-03-01 12:37:00
+the array has been set back to the sunrise position 
+the program will wait 45960 seconds until the next sunrise 
+
+ the program was stated at:2016-03-07 23:11:28.189082
+today is: Sunrise
+the day the length is:2866
+the turn Length for today is:37
+current sunsise: 2016-03-07 12:27:00
+current sunset: 2016-03-08 00:00:00
+next sunrise: 2016-03-08 12:25:00
+
+ the program was stated at:2016-03-07 23:17:52.098010
+today is: Sunrise
+the day the length is:2485
+the turn Length for today is:32
+current sunsise: 2016-03-07 12:27:00
+current sunset: 2016-03-08 00:00:00
+next sunrise: 2016-03-08 12:25:00
+
+ the program was stated at:2016-03-07 23:19:42.691811
+today is: Sunrise
+the day the length is:2372
+the turn Length for today is:30
+current sunsise: 2016-03-07 12:27:00
+current sunset: 2016-03-08 00:00:00
+next sunrise: 2016-03-08 12:25:00
+
+ the program was stated at:2016-03-07 23:30:12.976036
+
+ the program was stated at:2016-03-09 19:01:02.005493
+today is: Sunrise
+the day the length is:18013
+the turn Length for today is:233
+current sunsise: 2016-03-09 12:24:00
+current sunset: 2016-03-10 00:02:00
+next sunrise: 2016-03-10 12:22:00
+
+ the program was stated at:2016-03-09 19:34:32.687774
+today is: Sunrise
+the day the length is:16005
+the turn Length for today is:207
+current sunsise: 2016-03-09 12:24:00
+current sunset: 2016-03-10 00:02:00
+next sunrise: 2016-03-10 12:22:00
+
+ the program was stated at:2016-03-09 20:08:47.947306
+today is: Sunrise
+the day the length is:13948
+the turn Length for today is:181
+current sunsise: 2016-03-09 12:24:00
+current sunset: 2016-03-10 00:02:00
+next sunrise: 2016-03-10 12:22:00
+
+ the program was stated at:2016-03-11 18:47:14.578431
+today is: Sunrise
+the day the length is:19023
+the turn Length for today is:247
+current sunsise: 2016-03-11 12:20:00
+current sunset: 2016-03-12 00:05:00
+next sunrise: 2016-03-12 12:18:00
+
+ the program was stated at:2016-03-15 18:20:24.450078
+today is: Sunrise
+the day the length is:20873
+the turn Length for today is:271
+current sunsise: 2016-03-15 12:13:00
+current sunset: 2016-03-16 00:09:00
+next sunrise: 2016-03-16 12:12:00
