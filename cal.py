@@ -8,7 +8,7 @@ wormTime = float(5.73)
 actTime = float(5.73)
 #pin numbers for each gear
 wormpin1 = 23
-wormpin2 = 23
+wormpin2 = 24
 leftact1 = 8 
 leftact2 = 7
 rightact1 = 9
