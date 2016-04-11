@@ -1,5 +1,6 @@
 import RPi.GPIO as GPIO
 import os
+import time
 
 #Defines the raspberry pi
 GPIO.setmode(GPIO.BCM)
@@ -66,19 +67,23 @@ def turndown ():
 
 # main loop of the program
 while True:
-
-    while input() == "w":
+    var = input ("pleae input a key")
+    if var == "w":
         turnup()
+        time.sleep(2)
 
-    while input() == "s":
+    elif var == "s":
         turndown()
+        time.sleep(2)
 
-    while input() == "a":
+    elif var == "a":
         turnleft()
-
-    while input() == "d":
+        time.sleep(2)
+    elif  == "d":
         turnright()
+        time.sleep(2)
+    else:
+        stop()
 
     stop()
-
 
