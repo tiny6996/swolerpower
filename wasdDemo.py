@@ -79,7 +79,7 @@ while True:
     elif var == "a":
         turnleft()
         time.sleep(2)
-    elif  == "d":
+    elif var == "d":
         turnright()
         time.sleep(2)
     else:
