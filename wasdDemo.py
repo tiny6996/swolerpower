@@ -1,11 +1,22 @@
 import RPi.GPIO as GPIO
 import os
 
+#Defines the raspberry pi
+GPIO.setmode(GPIO.BCM)
+
+
 # setting global constants as the pin
 wormpin1 = 23
 wormpin2 = 24
 actpin1 = 9
 actpin2 = 11
+
+# sets all the needed pins as ouputs
+GPIO.setup(wormpin1, GPIO.OUT)
+GPIO.setup(wormpin2, GPIO.OUT)
+GPIO.setup(actpin1, GPIO.OUT)
+GPIO.setup(actpin2, GPIO.OUT)
+
 
 # function that sets all pins to false to the panels stop moving
 def stop():
@@ -37,38 +48,35 @@ def turnleft ():
 def turnup ():
     GPIO.output(actpin1, True)
     GPIO.output(actpin2, False)
-    print("The panel is turning Down")
+    print("The panel is turning up")
     os.system('clear')
 
 
 #functions that turns the panels closer to 0 degrees with the flywheel
 def turndown ():
-    GPIO.output(actpin1,False)
-    GPIO.output(actpin2,True)
+    GPIO.output(actpin1, False)
+    GPIO.output(actpin2, True)
+    print("the panel is doing down")
+    os.system('clear')
 
 
 
-# sets all the needed pins as ouputs
-GPIO.setup(wormpin1, GPIO.OUT)
-GPIO.setup(wormpin2, GPIO.OUT)
-GPIO.setup(actpin1, GPIO.OUT)
-GPIO.setup(actpin2, GPIO.OUT)
 
 
 
 # main loop of the program
 while True:
 
-    while input() == "w" :
+    while input() == "w":
         turnup()
 
-    while input() == "s" :
+    while input() == "s":
         turndown()
 
-    while input() == "a" :
+    while input() == "a":
         turnleft()
 
-    while input == "d" :
+    while input() == "d":
         turnright()
 
     stop()
