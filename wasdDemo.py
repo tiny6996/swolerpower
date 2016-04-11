@@ -67,7 +67,7 @@ def turndown ():
 
 # main loop of the program
 while True:
-    var = input("pleae input up, down, left, or right: ")
+    var = raw_input("pleae input up, down, left, or right: ")
 
     if var is "up":
         turnup()
