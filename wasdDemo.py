@@ -68,18 +68,19 @@ def turndown ():
 # main loop of the program
 while True:
     var = input ("pleae input a key")
-    if var == "w":
+    char(var)
+    if var == 'w':
         turnup()
         time.sleep(2)
 
-    elif var == "s":
+    elif var == 's':
         turndown()
         time.sleep(2)
 
-    elif var == "a":
+    elif var == 'a':
         turnleft()
         time.sleep(2)
-    elif var == "d":
+    elif var == 'd':
         turnright()
         time.sleep(2)
     else:
