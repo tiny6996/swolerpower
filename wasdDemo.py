@@ -67,20 +67,20 @@ def turndown ():
 
 # main loop of the program
 while True:
-    var = input ("pleae input a key")
-    char(var)
-    if var == 'w':
+    var = input("pleae input up, down, left, or right")
+
+    if var == "up":
         turnup()
         time.sleep(2)
 
-    elif var == 's':
+    elif var == "down":
         turndown()
         time.sleep(2)
 
-    elif var == 'a':
+    elif var == "left":
         turnleft()
         time.sleep(2)
-    elif var == 'd':
+    elif var == "right":
         turnright()
         time.sleep(2)
     else:
