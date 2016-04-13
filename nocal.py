@@ -8,7 +8,7 @@ wormTime = float(5.73)
 actTime = float(5.73)
 #pin numbers for each gear
 wormpin1 = 23
-wormpin2 = 23
+wormpin2 = 24
 leftact1 = 8
 leftact2 = 7
 rightact1 = 9
@@ -16,7 +16,7 @@ rightact2 = 11
 
 #making the panels the observer and the sun the object
 panels= ephem.Observer()
-sun = ephem.Sun()
+sun = ephem._sun()
 panels.lat='42.5'
 panels.long='90'
 
@@ -73,8 +73,8 @@ while True:
                 panels.date = datetime.now()
                 localtime = datetime.now()
                 sun.compute()
-                riseTime = ephm.localtime(panels.previous_rising(sun))
-                setTime = ephm.localtime(panels.next_setting(sun))
+                riseTime = ephem.localtime(panels.previous_rising(sun))
+                setTime = ephem.localtime(panels.next_setting(sun))
 
                 print "today the sun will rise at {}".format(riseTime)
                 print "today the sun will set at {}".format(setTime)
