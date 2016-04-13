@@ -3,10 +3,10 @@
 import string
 import RPi.GPIO as GPIO
 import ephem
-from datetime import datetime,date
-import io
-import os
-# global constansts for ease of use
+from datetime import datetime, date
+import time
+
+# global constants for ease of use
 
 wormTime = float(5.73)
 actTime = float(5.73)
@@ -37,45 +37,111 @@ GPIO.setup(actPin1, False)
 GPIO.setup(actPin2, False)
 
 # function that sets all pins to false to the panels stop moving
-def stop():
+def stopWorm():
     GPIO.output(wormpin1, False)
     GPIO.output(wormpin2, False)
+
+
+def stopAct():
     GPIO.output(actPin1, False)
     GPIO.output(actPin2, False)
-    print("the panels are not moving")
-    os.system('clear')
 
 
-# function that turns the panel right
-def turnright ():
+def toSunset(n):
     GPIO.output(wormpin1, False)
-    GPIO.output(wormpin2, True)
-    print("The Panels are turning right")
-    os.system('clear')
+    GPIO.output(wormpin1, True)
+    if n <= 38:
+        GPIO.output(actPin1, False)
+        GPIO.output(actPin1, True)
+        time.sleep(wormTime)
+        turnUP()
+    else:
+        GPIO.output(actPin1, True)
+        GPIO.output(actPin1, False)
+        time.sleep(wormTime)
+        turnDown()
 
 
-# function that turns the panels left
-def turnleft ():
+def toSunRise():
     GPIO.output(wormpin1, True)
     GPIO.output(wormpin2, False)
-    print("The Panel is turning left")
-    os.system('clear')
+    time.sleep(77 * wormTime)
+    stopWorm()
 
 
-# function that turns the panels towards 90 degrees with the flywheel
-def turnup ():
+def turnDown():
     GPIO.output(actPin1, True)
     GPIO.output(actPin2, False)
-    print("The panel is turning up")
-    os.system('clear')
+    time.sleep(actTime - wormTime)
 
 
-#functions that turns the panels closer to 0 degrees with the flywheel
-def turndown ():
+def turnUP():
     GPIO.output(actPin1, False)
     GPIO.output(actPin2, True)
-    print("the panel is doing down")
-    os.system('clear')
+    time.sleep(actTime - wormTime)
+
+
+# This function writes text to the log file on a new line
+def toLogFile(message):
+    with open('solarlog.txt', 'a') as logfile:
+        logfile.write(message)
+        logfile.write("\n")
+
+# runs once at the start of the program before enteringthe main loop
+print ("welcome to the best solar tracker ever!")
+
+# Writes three new lines to the log file between each startup
+with open('solarlog.txt', 'a') as logfile:
+    logfile.write("\n \n \n ")
+
+toLogFile("The Program was started at {} \n".format((str(datetime.now()))))
+
+
+# main loop of the program
+while True :
+    print("you are now in the main loop")
+
+    # Sets the time for the panels  and calculates the sunset
+    panels.date = datetime.now()
+    localtime = datetime.now()
+    tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+
+    # Find the time for today's sunrise and sunset as well as tommorows sunrise
+    setTime = ephem.localtime(panels.previous_rising(sun))
+    riseTime = ephem.localtime(panels.next_rising(sun))
+    tomorrowRise = ephem.tomorrow(panels.next_rising(sun))
+
+    # Using the dates found above calculate the day length and the delay time for the motors
+    dayLength = int((setTime - datetime.now().total_seconds()))
+    delay = dayLength/77
+
+    # Prints the the info about the day to the console and sends it the log file
+    print("today is {}".format(datetime.now))
+    print("today the sun will set at{}".format(riseTime))
+    print("today the sun will set at{}".format(setTime))
+    print("tomorrow the sun will rise at {}".format(tomorrow()))
+    print("the panels are going to move every {} seconds".format(delay))
+    toLogFile("today is{}".format(datetime.now()))
+    toLogFile("today the sun will set at{}".format(riseTime))
+    toLogFile("today the sun will set at{}".format(setTime))
+    toLogFile("tomorrow the sun will rise at {}".format(tomorrowRise))
+    toLogFile("the panels are going to move every {} seconds".format(delay))
+
+    # While the sun is up turn the panels towards the sunset
+    turnNumber = 0
+    while riseTime <= datetime.now():
+        print("the panels are in position {} of 77".format(turnNumber + 1))
+
+        toSunset(turnNumber)
+        turnNumber += turnNumber
+
+    # Move panels back to the Sun Rise Position
+    toSunRise()
+    # find the time between sunrises and go to sleep
+    sleepTime = int((tomorrowRise - setTime).total_seconds())
+    print("The day is over so the panels are going to move to the sunrise position \n ")
+    print("The panels are now going to sleep for {} seconds ".format(sleepTime))
+    toLogFile("The is over so now the panels are going to go to sleep for {} Seconds".format(sleepTime))
 
 
 
