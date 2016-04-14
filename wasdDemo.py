@@ -88,10 +88,10 @@ while True:
         turnleft()
         time.sleep(2)
 
-    elif var is "right": 
+    elif var is "right":
         turnright()
         time.sleep(2)
-    else :
+    else:
         stop()
 
     stop()
