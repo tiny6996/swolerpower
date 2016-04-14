@@ -76,19 +76,19 @@ stop()
 while True:
     var = raw_input("pleae input up, down, left, or right: ")
 
-    if var is "up":
+    if var == "up":
         turnup()
         time.sleep(2)
 
-    elif var is "down":
+    elif var == "down":
         turndown()
         time.sleep(2)
 
-    elif var is "left":
+    elif var == "left":
         turnleft()
         time.sleep(2)
 
-    elif var is "right":
+    elif var == "right":
         turnright()
         time.sleep(2)
     else:
