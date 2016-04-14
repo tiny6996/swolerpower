@@ -4,6 +4,7 @@ import time
 
 #Defines the raspberry pi
 GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
 
 
 # setting global constants as the pin
@@ -17,6 +18,7 @@ GPIO.setup(wormpin1, GPIO.OUT)
 GPIO.setup(wormpin2, GPIO.OUT)
 GPIO.setup(actpin1, GPIO.OUT)
 GPIO.setup(actpin2, GPIO.OUT)
+
 
 
 # function that sets all pins to false to the panels stop moving
@@ -34,6 +36,7 @@ def turnright ():
     GPIO.output(wormpin1, False)
     GPIO.output(wormpin2, True)
     print("The Panels are turning right")
+    time.sleep(5)
     os.system('clear')
 
 
@@ -42,6 +45,7 @@ def turnleft ():
     GPIO.output(wormpin1, True)
     GPIO.output(wormpin2, False)
     print("The Panel is turning left")
+    time.sleep(5)
     os.system('clear')
 
 
@@ -50,6 +54,7 @@ def turnup ():
     GPIO.output(actpin1, True)
     GPIO.output(actpin2, False)
     print("The panel is turning up")
+    time.sleep(5)
     os.system('clear')
 
 
@@ -58,14 +63,16 @@ def turndown ():
     GPIO.output(actpin1, False)
     GPIO.output(actpin2, True)
     print("the panel is doing down")
+    time.sleep(5)
     os.system('clear')
 
 
-
-
-
-
 # main loop of the program
+
+# stops the motors before starting the program
+stop()
+
+
 while True:
     var = raw_input("pleae input up, down, left, or right: ")
 
@@ -84,7 +91,7 @@ while True:
     elif var is "right":
         turnright()
         time.sleep(2)
-    else:
+    else :
         stop()
 
     stop()
