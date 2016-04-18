@@ -31,7 +31,7 @@ def stop():
 
 
 # function that turns the panel right
-def turnright ():
+def turnright():
     GPIO.output(wormpin1, False)
     GPIO.output(wormpin2, True)
     print("The Panels are turning right")
@@ -40,7 +40,7 @@ def turnright ():
 
 
 # function that turns the panels left
-def turnleft ():
+def turnleft():
     GPIO.output(wormpin1, True)
     GPIO.output(wormpin2, False)
     print("The Panel is turning left")
@@ -49,7 +49,7 @@ def turnleft ():
 
 
 # function that turns the panels towards 90 degrees with the flywheel
-def turnup ():
+def turnup():
     GPIO.output(actpin1, True)
     GPIO.output(actpin2, False)
     print("The panel is turning up")
@@ -58,7 +58,7 @@ def turnup ():
 
 
 #functions that turns the panels closer to 0 degrees with the flywheel
-def turndown ():
+def turndown():
     GPIO.output(actpin1, False)
     GPIO.output(actpin2, True)
     print("the panel is doing down")
