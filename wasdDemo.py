@@ -8,8 +8,8 @@ GPIO.setwarnings(False)
 
 
 # setting global constants as the pin
-wormpin1 = 23
-wormpin2 = 24
+wormpin1 = 8
+wormpin2 = 7
 actpin1 = 9
 actpin2 = 11
 
@@ -18,7 +18,6 @@ GPIO.setup(wormpin1, GPIO.OUT)
 GPIO.setup(wormpin2, GPIO.OUT)
 GPIO.setup(actpin1, GPIO.OUT)
 GPIO.setup(actpin2, GPIO.OUT)
-
 
 
 # function that sets all pins to false to the panels stop moving
@@ -91,6 +90,10 @@ while True:
     elif var == "right":
         turnright()
         time.sleep(2)
+
+    elif var == "exit":
+        stop()
+        exit()
     else:
         stop()
 
