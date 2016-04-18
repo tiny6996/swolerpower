@@ -77,19 +77,15 @@ while True:
 
     if var == "up":
         turnup()
-        time.sleep(2)
 
     elif var == "down":
         turndown()
-        time.sleep(2)
 
     elif var == "left":
         turnleft()
-        time.sleep(2)
 
     elif var == "right":
         turnright()
-        time.sleep(2)
 
     elif var == "exit":
         stop()
