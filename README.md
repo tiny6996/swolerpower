@@ -25,7 +25,7 @@ The frame was custom designed using various steel parts, a flywheel from a 2009 
 ### WasdDemo
 This code was designed to show off the project off at the loras college Legacy Symposium. It moves the panels up, down, left, or right based on user input and can be exited by typing exit 
 
-### main
+### Main
 This code is desinged to calculate the day length at the beginning of each day using the ephem library. After the day length is cut into small chucks based on the day length. For every chunk of the day it pulses the motors so it follows the sun. At the end of the day the panels move back to the sun rise position. Then the panels will remain in the same position until the next sunrise.  
 
 
