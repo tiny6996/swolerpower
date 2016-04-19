@@ -4,5 +4,5 @@
 
 cd /home/pi/nocal
 python main.py
-cd /
+
 
