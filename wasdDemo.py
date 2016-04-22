@@ -10,8 +10,8 @@ GPIO.setwarnings(False)
 # setting global constants as the pin
 wormpin1 = 8
 wormpin2 = 7
-actpin1 = 9
-actpin2 = 11
+actpin1 = 11
+actpin2 = 9
 
 # sets all the needed pins as ouputs
 GPIO.setup(wormpin1, GPIO.OUT)
