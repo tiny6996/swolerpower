@@ -268,3 +268,37 @@ the turn Length for today is:271
 current sunsise: 2016-03-15 12:13:00
 current sunset: 2016-03-16 00:09:00
 next sunrise: 2016-03-16 12:12:00
+
+ 
+ 
+ The Program was started at 2016-04-26 16:56:28.308475 
+
+
+ 
+ 
+ The Program was started at 2016-04-26 16:57:49.620215 
+
+
+ 
+ 
+ The Program was started at 2016-04-26 17:00:12.574707 
+
+
+ 
+ 
+ The Program was started at 2016-04-26 17:02:17.443795 
+
+
+ 
+ 
+ The Program was started at 2016-04-26 17:03:02.264140 
+
+
+ 
+ 
+ The Program was started at 2016-04-26 17:06:45.625777 
+
+
+ 
+ 
+ 

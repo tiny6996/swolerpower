@@ -3,7 +3,8 @@
 import string
 import RPi.GPIO as GPIO
 import ephem
-from datetime import datetime, date
+import datetime
+#from datetime import timedelta, date, datetime
 import time
 
 # global constants for ease of use
@@ -104,7 +105,9 @@ while True :
     # Sets the time for the panels  and calculates the sunset
     panels.date = datetime.now()
     localtime = datetime.now()
-    tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+    delta = datetime.timedelta(days=1)
+    today = datetime.today()
+    tomorrow = today + delta
 
     # Find the time for today's sunrise and sunset as well as tommorows sunrise
     setTime = ephem.localtime(panels.previous_rising(sun))
