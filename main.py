@@ -111,6 +111,8 @@ while True :
     # Find the time for today's sunrise and sunset as well as tomorrow sunrise
     setTime = panels.previous_setting(sun)
     riseTime = panels.next_rising(sun)
+    nextPanels = ephem.Observer()
+    nextPanels.date(today + delta)
     tomorrowRise = panels.next_rising(sun)
 
     # Using the dates found above calculate the day length and the delay time for the motors
