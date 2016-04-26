@@ -118,16 +118,16 @@ while True :
     delay = dayLength/77
 
     # Prints the the info about the day to the console and sends it the log file
-    print("today is {}".format(dt.datetime.now))
-    print("today the sun will set at{}".format(riseTime))
-    print("today the sun will set at{}".format(setTime))
-    print("tomorrow the sun will rise at {}".format(tomorrowRise))
-    print("the panels are going to move every {} seconds".format(delay))
-    toLogFile("today is{}".format(dt.datetime.now()))
-    toLogFile("today the sun will set at{}".format(riseTime))
-    toLogFile("today the sun will set at{}".format(setTime))
-    toLogFile("tomorrow the sun will rise at {}".format(tomorrowRise))
-    toLogFile("the panels are going to move every {} seconds".format(delay))
+    print("today is {}".format(dt.datetime.now()))
+    print("today the sun will set at{} ".format(riseTime))
+    print("today the sun will set at{} ".format(setTime))
+    print("tomorrow the sun will rise at {} ".format(tomorrowRise))
+    print("the panels are going to move every {} seconds ".format(delay))
+    toLogFile("today is{} ".format(dt.datetime.now()))
+    toLogFile("today the sun will set at{} ".format(riseTime))
+    toLogFile("today the sun will set at{} ".format(setTime))
+    toLogFile("tomorrow the sun will rise at {} ".format(tomorrowRise))
+    toLogFile("the panels are going to move every {} seconds ".format(delay))
 
     # While the sun is up turn the panels towards the sunset
     turnNumber = 0
