@@ -113,7 +113,7 @@ while True :
     riseTime = panels.next_rising(sun)
     nextPanels = ephem.Observer()
     nextPanels.date = today + delta
-    tomorrowRise = panels.next_rising(sun)
+    tomorrowRise = nextPanels.next_rising(sun)
 
     # Using the dates found above calculate the day length and the delay time for the motors
     dayLength = int((setTime.datetime() - dt.datetime.now()).total_seconds())
