@@ -103,15 +103,15 @@ while True :
 
     # Sets the time for the panels  and calculates the sunset
     panels.date = dt.datetime.now()
-    localtime = dt.datetime.now()
+    # localtime = dt.datetime.now()
     delta = dt.timedelta(days=1)
     today = dt.datetime.today()
     tomorrow = today + delta
 
     # Find the time for today's sunrise and sunset as well as tomorrow sunrise
-    setTime = ephem.localtime(panels.previous_setting(sun))
-    riseTime = ephem.localtime(panels.next_rising(sun))
-    tomorrowRise = ephem.localtime(panels.next_rising(sun))
+    setTime = panels.previous_setting(sun)
+    riseTime = panels.next_rising(sun)
+    tomorrowRise = panels.next_rising(sun)
 
     # Using the dates found above calculate the day length and the delay time for the motors
     dayLength = int((setTime - dt.datetime.now()).total_seconds())
