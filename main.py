@@ -92,7 +92,7 @@ print ("welcome to the best solar tracker ever!")
 
 # Writes three new lines to the log file between each startup
 with open('solarlog.txt', 'a') as logfile:
-    logfile.write("\n \n \n ")
+    logfile.write("\n \n ")
 
 toLogFile("The Program was started at {} \n".format((str(dt.datetime.now()))))
 
@@ -119,20 +119,20 @@ while True :
 
     # Prints the the info about the day to the console and sends it the log file
     print("today is {}".format(dt.datetime.now()))
-    print("today the sun will set at{} ".format(riseTime))
-    print("today the sun will set at{} ".format(setTime))
+    print("today the sun will rise at {} ".format(riseTime))
+    print("today the sun will set at {} ".format(setTime))
     print("tomorrow the sun will rise at {} ".format(tomorrowRise))
     print("the panels are going to move every {} seconds ".format(delay))
     toLogFile("today is{} ".format(dt.datetime.now()))
-    toLogFile("today the sun will set at{} ".format(riseTime))
-    toLogFile("today the sun will set at{} ".format(setTime))
+    toLogFile("today the sun will set at {} ".format(riseTime))
+    toLogFile("today the sun will set at {} ".format(setTime))
     toLogFile("tomorrow the sun will rise at {} ".format(tomorrowRise))
     toLogFile("the panels are going to move every {} seconds ".format(delay))
 
     # While the sun is up turn the panels towards the sunset
     turnNumber = 0
     while riseTime <= dt.datetime.now():
-        print("the panels are in position {} of 77".format(turnNumber + 1))
+        print("the panels are in position {} of 77 \n".format(turnNumber + 1))
 
         toSunset(turnNumber)
         turnNumber += turnNumber
@@ -142,8 +142,8 @@ while True :
     # find the time between sunrises and go to sleep
     sleepTime = int((tomorrowRise - setTime).total_seconds())
     print("The day is over so the panels are going to move to the sunrise position \n ")
-    print("The panels are now going to sleep for {} seconds ".format(sleepTime))
-    toLogFile("The is over so now the panels are going to go to sleep for {} Seconds".format(sleepTime))
+    print("The panels are now going to sleep for {} seconds \n".format(sleepTime))
+    toLogFile("The is over so now the panels are going to go to sleep for {} Seconds \n".format(sleepTime))
 
 
 
