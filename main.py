@@ -121,7 +121,7 @@ while True :
     print("today is {}".format(dt.datetime.now))
     print("today the sun will set at{}".format(riseTime))
     print("today the sun will set at{}".format(setTime))
-    print("tomorrow the sun will rise at {}".format(tomorrow()))
+    print("tomorrow the sun will rise at {}".format(tomorrowRise))
     print("the panels are going to move every {} seconds".format(delay))
     toLogFile("today is{}".format(dt.datetime.now()))
     toLogFile("today the sun will set at{}".format(riseTime))
