@@ -108,10 +108,10 @@ while True :
     today = dt.datetime.today()
     tomorrow = today + delta
 
-    # Find the time for today's sunrise and sunset as well as tommorows sunrise
+    # Find the time for today's sunrise and sunset as well as tomorrow sunrise
     setTime = ephem.localtime(panels.previous_rising(sun))
     riseTime = ephem.localtime(panels.next_rising(sun))
-    tomorrowRise = ephem.tomorrow(panels.next_rising(sun))
+    tomorrowRise = dt.datetime.tomorrow(panels.next_rising(sun))
 
     # Using the dates found above calculate the day length and the delay time for the motors
     dayLength = int((setTime - dt.datetime.now().total_seconds()))
