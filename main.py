@@ -112,7 +112,7 @@ while True :
     panels.date = dt.datetime.now()
 
     # Find the time for today's sunrise and sunset as well as tomorrow sunrise
-    setTime = nextPanels.previous_setting(sun)
+    setTime = panels.next_setting(sun)
     riseTime = panels.next_rising(sun)
     tomorrowRise = nextPanels.next_rising(sun)
 
