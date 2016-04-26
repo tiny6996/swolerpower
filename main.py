@@ -114,7 +114,7 @@ while True :
     tomorrowRise = panels.next_rising(sun)
 
     # Using the dates found above calculate the day length and the delay time for the motors
-    dayLength = int((setTime - dt.datetime.now()).total_seconds())
+    dayLength = int((setTime.datetime() - dt.datetime.now()).total_seconds())
     delay = dayLength/77
 
     # Prints the the info about the day to the console and sends it the log file
