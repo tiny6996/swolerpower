@@ -8,8 +8,8 @@ GPIO.setwarnings(False)
 
 
 # setting global constants as the pin
-wormpin1 = 8
-wormpin2 = 7
+wormpin1 = 7
+wormpin2 = 8
 actpin1 = 11
 actpin2 = 9
 
