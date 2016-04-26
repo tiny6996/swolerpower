@@ -131,7 +131,7 @@ while True :
 
     # While the sun is up turn the panels towards the sunset
     turnNumber = 0
-    while riseTime.datetime <= dt.datetime.now():
+    while riseTime.datetime() <= dt.datetime.now():
         print("the panels are in position {} of 77 \n".format(turnNumber + 1))
 
         toSunset(turnNumber)
