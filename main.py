@@ -3,8 +3,7 @@
 import string
 import RPi.GPIO as GPIO
 import ephem
-import datetime
-#from datetime import timedelta, date, datetime
+import datetime as dt
 import time
 
 # global constants for ease of use
@@ -95,7 +94,7 @@ print ("welcome to the best solar tracker ever!")
 with open('solarlog.txt', 'a') as logfile:
     logfile.write("\n \n \n ")
 
-toLogFile("The Program was started at {} \n".format((str(datetime.now()))))
+toLogFile("The Program was started at {} \n".format((str(dt.datetime.now()))))
 
 
 # main loop of the program
@@ -103,10 +102,10 @@ while True :
     print("you are now in the main loop")
 
     # Sets the time for the panels  and calculates the sunset
-    panels.date = datetime.now()
-    localtime = datetime.now()
-    delta = datetime.timedelta(days=1)
-    today = datetime.today()
+    panels.date = dt.datetime.now()
+    localtime = dt.datetime.now()
+    delta = dt.timedelta(days=1)
+    today = dt.datetime.today()
     tomorrow = today + delta
 
     # Find the time for today's sunrise and sunset as well as tommorows sunrise
@@ -115,16 +114,16 @@ while True :
     tomorrowRise = ephem.tomorrow(panels.next_rising(sun))
 
     # Using the dates found above calculate the day length and the delay time for the motors
-    dayLength = int((setTime - datetime.now().total_seconds()))
+    dayLength = int((setTime - dt.datetime.now().total_seconds()))
     delay = dayLength/77
 
     # Prints the the info about the day to the console and sends it the log file
-    print("today is {}".format(datetime.now))
+    print("today is {}".format(dt.datetime.now))
     print("today the sun will set at{}".format(riseTime))
     print("today the sun will set at{}".format(setTime))
     print("tomorrow the sun will rise at {}".format(tomorrow()))
     print("the panels are going to move every {} seconds".format(delay))
-    toLogFile("today is{}".format(datetime.now()))
+    toLogFile("today is{}".format(dt.datetime.now()))
     toLogFile("today the sun will set at{}".format(riseTime))
     toLogFile("today the sun will set at{}".format(setTime))
     toLogFile("tomorrow the sun will rise at {}".format(tomorrowRise))
@@ -132,7 +131,7 @@ while True :
 
     # While the sun is up turn the panels towards the sunset
     turnNumber = 0
-    while riseTime <= datetime.now():
+    while riseTime <= dt.datetime.now():
         print("the panels are in position {} of 77".format(turnNumber + 1))
 
         toSunset(turnNumber)
