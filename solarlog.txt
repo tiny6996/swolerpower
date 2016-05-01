@@ -302,3 +302,56 @@ next sunrise: 2016-03-16 12:12:00
  
  
  
+ 
+ The Program was started at 2016-04-30 21:16:20.023086 
+
+today is2016-04-30 21:16:20.025105 
+today the sun will set at 2016/4/29 22:55:58 
+today the sun will set at 2016/5/1 13:00:15 
+tomorrow the sun will rise at 2016/4/30 22:54:36 
+the panels are going to move every 735 seconds 
+
+ 
+ The Program was started at 2016-04-30 21:20:29.267476 
+
+today is2016-04-30 21:20:29.269505 
+today the sun will set at 2016/4/29 22:55:58 
+today the sun will set at 2016/5/1 13:00:15 
+tomorrow the sun will rise at 2016/4/30 22:54:36 
+the panels are going to move every 732 seconds 
+
+ 
+ The Program was started at 2016-04-30 21:20:47.625308 
+
+today is2016-04-30 21:20:47.627453 
+today the sun will set at 2016/4/29 22:55:58 
+today the sun will set at 2016/5/1 13:00:15 
+tomorrow the sun will rise at 2016/4/30 22:54:36 
+the panels are going to move every 732 seconds 
+
+ 
+ The Program was started at 2016-04-30 21:21:37.811404 
+
+today is2016-04-30 21:21:37.813428 
+today the sun will set at 2016/4/29 22:55:58 
+today the sun will set at 2016/5/1 13:00:15 
+tomorrow the sun will rise at 2016/4/30 22:54:36 
+the panels are going to move every 731 seconds 
+
+ 
+ The Program was started at 2016-04-30 21:22:13.058444 
+
+today is2016-04-30 21:22:13.060452 
+today the sun will set at 2016/4/29 22:55:58 
+today the sun will set at 2016/5/1 13:00:15 
+tomorrow the sun will rise at 2016/4/30 22:54:36 
+the panels are going to move every 730 seconds 
+
+ 
+ The Program was started at 2016-04-30 21:24:37.590135 
+
+today is2016-04-30 21:24:37.592146 
+today the sun will set at 2016/4/30 22:54:23 
+today the sun will set at 2016/5/1 13:00:15 
+tomorrow the sun will rise at 2016/5/1 22:53:02 
+the panels are going to move every 729 seconds 

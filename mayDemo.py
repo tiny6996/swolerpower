@@ -31,8 +31,7 @@ def stopAct():
 
 
 def toSunset(n):
-    GPIO.output(wormpin1, False)
-    GPIO.output(wormpin1, True)
+
     if n <= 38:
         print "this is the AM turn function"
     else:
@@ -78,8 +77,8 @@ while True :
 
     # Find the time for today's sunrise and sunset as well as tomorrow sunrise
     setTime = panels.next_setting(ephem.Sun())
-    riseTime = panels.previous_rising(ephem.Sun())
-    tomorrowRise = panels.next_rising(ephem.Sun())
+    riseTime = nextPanels.previous_rising(ephem.Sun())
+    tomorrowRise = nextPanels.next_rising(ephem.Sun())
 
     # Using the dates found above calculate the day length and the delay time for the motors
     dayLength = int((setTime.datetime() - dt.datetime.now()).total_seconds())
@@ -104,11 +103,12 @@ while True :
 
         toSunset(turnNumber)
         turnNumber += turnNumber
-
+        time.sleep(dayLength)
+        turnNumber += 1
     # Move panels back to the Sun Rise Position
     toSunRise()
     # find the time between sunrises and go to sleep
-    sleepTime = int((tomorrowRise - setTime).total_seconds())
+    sleepTime = int((tomorrowRise - setTime)).total_seconds()
     print("The day is over so the panels are going to move to the sunrise position \n ")
     print("The panels are now going to sleep for {} seconds \n".format(sleepTime))
     toLogFile("The is over so now the panels are going to go to sleep for {} Seconds \n".format(sleepTime))
