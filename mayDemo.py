@@ -77,7 +77,8 @@ while True :
     panels.date = dt.datetime.today()
 
     #This is going to be a really long & messy if else statement to get the date to that updates the sunrise and sunset times every 10 days
-    # this is based on the US central timezone and accounts for DST on march 13 and november 5
+    # this is based on the US central timezone and accounts for DST on march 13 and november
+    # I should shove this in a function later 
     if dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 1, 10):
         riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 34)
         setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 16, 41)
