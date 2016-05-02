@@ -355,3 +355,112 @@ today the sun will set at 2016/4/30 22:54:23
 today the sun will set at 2016/5/1 13:00:15 
 tomorrow the sun will rise at 2016/5/1 22:53:02 
 the panels are going to move every 729 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:17:27.217059 
+
+
+ 
+ The Program was started at 2016-05-01 21:31:31.171619 
+
+
+ 
+ The Program was started at 2016-05-01 21:31:54.193504 
+
+
+ 
+ The Program was started at 2016-05-01 21:33:37.874992 
+
+
+ 
+ The Program was started at 2016-05-01 21:35:15.540634 
+
+
+ 
+ The Program was started at 2016-05-01 21:35:34.188859 
+
+
+ 
+ The Program was started at 2016-05-01 21:36:34.197052 
+
+
+ 
+ The Program was started at 2016-05-01 21:36:58.690790 
+
+today is2016-05-01 21:36:58.690956 
+today the sun will set at 2016-05-01 12:30:00 
+today the sun will set at 2016-05-01 22:30:00 
+tomorrow the sun will rise at 2016-05-01 12:29:00 
+the panels are going to move every 41 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:37:03.943628 
+
+today is2016-05-01 21:37:03.943799 
+today the sun will set at 2016-05-01 12:30:00 
+today the sun will set at 2016-05-01 22:30:00 
+tomorrow the sun will rise at 2016-05-01 12:29:00 
+the panels are going to move every 41 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:38:06.784965 
+
+today is2016-05-01 21:38:06.785134 
+today the sun will set at 2016-05-01 12:30:00 
+today the sun will set at 2016-05-01 22:30:00 
+tomorrow the sun will rise at 2016-05-01 12:29:00 
+the panels are going to move every 40 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:38:18.370747 
+
+today is2016-05-01 21:38:18.370907 
+today the sun will set at 2016-05-01 12:30:00 
+today the sun will set at 2016-05-01 22:30:00 
+tomorrow the sun will rise at 2016-05-01 12:29:00 
+the panels are going to move every 40 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:38:48.351408 
+
+today is2016-05-01 21:38:48.351574 
+today the sun will set at 2016-05-01 12:30:00 
+today the sun will set at 2016-05-01 22:30:00 
+tomorrow the sun will rise at 2016-05-02 12:29:00 
+the panels are going to move every 39 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:39:57.591364 
+
+today is2016-05-01 21:39:57.591523 
+today the sun will set at 2016-05-01 12:30:00 
+today the sun will set at 2016-05-01 22:30:00 
+tomorrow the sun will rise at 2016-05-02 12:29:00 
+the panels are going to move every 38 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:48:19.808582 
+
+today is2016-05-01 21:48:19.808738 
+today the sun will set at 2016-05-01 05:55:00 
+today the sun will set at 2016-05-01 08:05:00 
+tomorrow the sun will rise at 2016-05-02 05:55:00 
+the panels are going to move every -642 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:51:59.086172 
+
+today is2016-05-01 21:51:59.086339 
+today the sun will set at 2016-05-01 05:55:00 
+today the sun will set at 2016-05-01 08:05:00 
+tomorrow the sun will rise at 2016-05-02 05:55:00 
+the panels are going to move every -645 seconds 
+
+ 
+ The Program was started at 2016-05-01 21:52:47.130717 
+
+today is2016-05-01 21:52:47.130876 
+today the sun will set at 2016-05-01 05:55:00 
+today the sun will set at 2016-05-01 08:05:00 
+tomorrow the sun will rise at 2016-05-02 05:55:00 
+the panels are going to move every -646 seconds 

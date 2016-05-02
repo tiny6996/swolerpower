@@ -7,6 +7,7 @@ import time
 
 
 
+
 # setting the location of the observer and a sun shortcut
 
 panels = ephem.Observer()
@@ -75,14 +76,87 @@ while True :
     nextPanels.date = tomorrow
     panels.date = dt.datetime.today()
 
-    # Find the time for today's sunrise and sunset as well as tomorrow sunrise
-    setTime = panels.next_setting(ephem.Sun())
-    riseTime = nextPanels.previous_rising(ephem.Sun())
-    tomorrowRise = nextPanels.next_rising(ephem.Sun())
+    #This is going to be a really long & messy if else statement to get the date to that updates the sunrise and sunset times every 10 days
+    # this is based on the US central timezone and accounts for DST on march 13 and november 5
+    if dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 1, 10):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 34)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 16, 41)
+        tomorrowRise = dt.datetime(dt.datetime.now().year,dt.datetime.now().month, dt.datetime.now().day, 7, 34)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 1, 20):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 27)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 17, 02)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 7, 29)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 1, 31):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 23)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 17, 02)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 7, 22)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 2, 10):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 9)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 17, 23)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 7, 5)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 2, 20):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 6, 55)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 17, 36)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 6, 55)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 2, 29):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 6, 45)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 17, 47)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 7, 5)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 3, 10):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 13)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 19, 15)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 7, 10)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 3, 20):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 00)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 19, 19)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 7, 00)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 3, 31):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 6, 52)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 19, 25)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 6, 50)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 4, 10):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 6, 40)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 19, 32)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 6, 35)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 4, 20):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 6, 20)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 19, 45)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 6, 15)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 4, 30):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 6, 05)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 19, 57)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 6, 0)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 5, 10):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 5, 55)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 20, 05)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 5, 55)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 5, 20):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 5, 35)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 20, 28)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 5, 30)
+
+    elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 5, 31):
+        riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 5, 30)
+        setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 20, 35)
+        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day + 1, 5, 25)
+
 
     # Using the dates found above calculate the day length and the delay time for the motors
-    dayLength = int((setTime.datetime() - dt.datetime.now()).total_seconds())
-    delay = dayLength/77
+    dayLength = int((setTime - dt.datetime.now()).total_seconds())
+    delay = int(dayLength/77)
 
     # Prints the the info about the day to the console and sends it the log file
     print("today is {}".format(dt.datetime.now()))
@@ -98,12 +172,12 @@ while True :
 
     # While the sun is up turn the panels towards the sunset
     turnNumber = 0
-    while riseTime.datetime() <= dt.datetime.now():
+    while riseTime <= dt.datetime.now():
         print("the panels are in position {} of 77 \n".format(turnNumber + 1))
 
         toSunset(turnNumber)
         turnNumber += turnNumber
-        time.sleep(dayLength)
+        time.sleep(delay)
         turnNumber += 1
     # Move panels back to the Sun Rise Position
     toSunRise()
