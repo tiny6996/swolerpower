@@ -157,7 +157,7 @@ while True :
 
     # Using the dates found above calculate the day length and the delay time for the motors
     dayLength = int((setTime - dt.datetime.now()).total_seconds())
-    delay = int(dayLength/77)
+    delay = int(dayLength/7700)
 
     # Prints the the info about the day to the console and sends it the log file
     print("today is {}".format(dt.datetime.now()))
@@ -173,20 +173,24 @@ while True :
 
     # While the sun is up turn the panels towards the sunset
     turnNumber = 0
-    while riseTime <= dt.datetime.now():
+    while riseTime <= dt.datetime.now() and turnNumber < 77:
         print("the panels are in position {} of 77 \n".format(turnNumber + 1))
 
         toSunset(turnNumber)
-        turnNumber += turnNumber
         time.sleep(delay)
         turnNumber += 1
+
+
+
     # Move panels back to the Sun Rise Position
-    toSunRise()
-    # find the time between sunrises and go to sleep
-    sleepTime = int((tomorrowRise - setTime)).total_seconds()
     print("The day is over so the panels are going to move to the sunrise position \n ")
+    toSunRise()
+
+    # find the time between sunrises and go to sleep
+    sleepTime = (tomorrowRise - setTime).total_seconds()
     print("The panels are now going to sleep for {} seconds \n".format(sleepTime))
     toLogFile("The is over so now the panels are going to go to sleep for {} Seconds \n".format(sleepTime))
+    time.sleep(sleepTime)
 
 
 

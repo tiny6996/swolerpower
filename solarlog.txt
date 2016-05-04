@@ -464,3 +464,84 @@ today the sun will set at 2016-05-01 05:55:00
 today the sun will set at 2016-05-01 08:05:00 
 tomorrow the sun will rise at 2016-05-02 05:55:00 
 the panels are going to move every -646 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:11:15.437893 
+
+today is2016-05-04 13:11:15.438248 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 322 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:11:55.386122 
+
+today is2016-05-04 13:11:55.386601 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:13:04.746199 
+
+today is2016-05-04 13:13:04.746538 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:13:33.189086 
+
+today is2016-05-04 13:13:33.189365 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:13:44.283560 
+
+today is2016-05-04 13:13:44.283987 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:19:31.494765 
+
+today is2016-05-04 13:19:31.495114 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+The is over so now the panels are going to go to sleep for 35400.0 Seconds 
+
+today is2016-05-04 13:23:25.736899 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:24:02.207293 
+
+today is2016-05-04 13:24:02.207728 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+
+ 
+ The Program was started at 2016-05-04 13:36:45.954046 
+
+today is2016-05-04 13:36:45.954359 
+today the sun will set at 2016-05-04 05:55:00 
+today the sun will set at 2016-05-04 20:05:00 
+tomorrow the sun will rise at 2016-05-05 05:55:00 
+the panels are going to move every 3 seconds 
+The is over so now the panels are going to go to sleep for 35400.0 Seconds 
+
