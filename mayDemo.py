@@ -5,23 +5,6 @@ import ephem
 import datetime as dt
 import time
 
-
-
-
-# setting the location of the observer and a sun shortcut
-
-panels = ephem.Observer()
-nextPanels = ephem.Observer()
-sun = ephem.Sun()
-panels.lat = '42.5'
-panels.long = '90'
-nextPanels.lat = '42.6'
-nextPanels.long = '90'
-
-
-
-
-
 # function that sets all pins to false to the panels stop moving
 def stopWorm():
     print " I am stopping this shit from the worm gear "
@@ -69,12 +52,6 @@ toLogFile("The Program was started at {} \n".format((str(dt.datetime.now()))))
 while True :
     print("you are now in the main loop")
 
-    # Sets the time for the panels  and calculates the sunset
-    delta = dt.timedelta(days=1)
-    today = dt.datetime.today()
-    tomorrow = today + delta
-    nextPanels.date = tomorrow
-    panels.date = dt.datetime.today()
 
     #This is going to be a really long & messy if else statement to get the date to that updates the sunrise and sunset times every 10 days
     # this is based on the US central timezone and accounts for DST on march 13 and november

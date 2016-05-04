@@ -2,12 +2,10 @@
 
 import string
 import RPi.GPIO as GPIO
-import ephem
 import datetime as dt
 import time
 
-# global constants for ease of use
-
+# global constants for pin numbers and turn times
 wormTime = float(5.73)
 actTime = float(5.73)
 wormpin1 = int(23)
@@ -15,15 +13,7 @@ wormpin2 = int(24)
 actPin1 = int(9)
 actPin2 = int(11)
 
-# setting the location of the observer and a sun shortcut
 
-panels = ephem.Observer()
-nextPanels = ephem.Observer()
-sun = ephem.Sun()
-panels.lat = '42.5'
-panels.long = '90'
-nextPanels.lat = '42.6'
-nextPanels.long = '90'
 
 # Setup for the raspberry pi
 GPIO.setwarnings(False)
@@ -104,20 +94,14 @@ toLogFile("The Program was started at {} \n".format((str(dt.datetime.now()))))
 while True :
     print("you are now in the main loop")
 
-    # Sets the time for the panels  and calculates the sunset
-    delta = dt.timedelta(days=1)
-    today = dt.datetime.today()
-    tomorrow = today + delta
-    nextPanels.date = tomorrow
-    panels.date = dt.datetime.now()
 
-    # if else statement that updates the rise and set time every time days
-    # this is based on Dubuque Iowa 2016 rise and set times and includes a time for leap year
-    # it is does adjust for the daylight savings
+    #This is going to be a really long & messy if else statement to get the date to that updates the sunrise and sunset times every 10 days
+    # this is based on the US central timezone and accounts for DST on march 13 and november
+    # I should shove this in a function later
     if dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 1, 10):
         riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 34)
         setTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 16, 41)
-        tomorrowRise = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 34)
+        tomorrowRise = dt.datetime(dt.datetime.now().year,dt.datetime.now().month, dt.datetime.now().day, 7, 34)
 
     elif dt.datetime.now() <= dt.datetime(dt.datetime.now().year, 1, 20):
         riseTime = dt.datetime(dt.datetime.now().year, dt.datetime.now().month, dt.datetime.now().day, 7, 27)
@@ -192,7 +176,7 @@ while True :
 
     # Using the dates found above calculate the day length and the delay time for the motors
     dayLength = int((setTime - dt.datetime.now()).total_seconds())
-    delay = dayLength/77
+    delay = int(dayLength/7700)
 
     # Prints the the info about the day to the console and sends it the log file
     print("today is {}".format(dt.datetime.now()))
@@ -208,20 +192,24 @@ while True :
 
     # While the sun is up turn the panels towards the sunset
     turnNumber = 0
-    while riseTime <= dt.datetime.now():
+    while riseTime <= dt.datetime.now() and turnNumber < 77:
         print("the panels are in position {} of 77 \n".format(turnNumber + 1))
 
         toSunset(turnNumber)
-        turnNumber += turnNumber
+        time.sleep(delay)
+        turnNumber += 1
+
+
 
     # Move panels back to the Sun Rise Position
-    toSunRise()
-    # find the time between sunrises and go to sleep
-    sleepTime = int((tomorrowRise - setTime).total_seconds())
     print("The day is over so the panels are going to move to the sunrise position \n ")
+    toSunRise()
+
+    # find the time between sunrises and go to sleep
+    sleepTime = (tomorrowRise - setTime).total_seconds()
     print("The panels are now going to sleep for {} seconds \n".format(sleepTime))
     toLogFile("The is over so now the panels are going to go to sleep for {} Seconds \n".format(sleepTime))
-
+    time.sleep(sleepTime)
 
 
 
