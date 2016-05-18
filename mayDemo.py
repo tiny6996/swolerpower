@@ -1,7 +1,6 @@
 # importing nessacary libraries
 
 import string
-import ephem
 import datetime as dt
 import time
 
